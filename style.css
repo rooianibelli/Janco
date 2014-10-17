@@ -1,0 +1,823 @@
+@font-face {
+    font-family: Gnuolane;
+    src: url('assets/fonts/gnuolanerg-webfont.eot');
+    src: url('assets/fonts/gnuolanerg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/gnuolanerg-webfont.woff') format('woff'),
+         url('assets/fonts/gnuolanerg-webfont.ttf') format('truetype'),
+         url('assets/fonts/gnuolanerg-webfont.svg#gnuolaneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* JQUERY UI ACCORDION CSS */
+
+	.demoHeaders {
+		margin-top: 2em;
+	}
+	#dialog-link {
+		padding: .4em 1em .4em 20px;
+		text-decoration: none;
+		position: relative;
+	}
+	#dialog-link span.ui-icon {
+		margin: 0 5px 0 0;
+		position: absolute;
+		left: .2em;
+		top: 50%;
+		margin-top: -8px;
+	}
+	#icons {
+		margin: 0;
+		padding: 0;
+	}
+	#icons li {
+		margin: 2px;
+		position: relative;
+		padding: 4px 0;
+		cursor: pointer;
+		float: left;
+		list-style: none;
+	}
+	#icons span.ui-icon {
+		float: left;
+		margin: 0 4px;
+	}
+	.fakewindowcontain .ui-widget-overlay {
+		position: absolute;
+	}
+	select {
+		width: 200px;
+	}
+
+	h3 a {
+
+		color: black;
+	}
+
+/* --- CSS JANCO --- */
+
+* {
+
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+html, body {
+
+	height: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+
+}
+
+img, div, iframe{
+
+	border: 0;
+	border: none;
+}
+
+.siderRight, .siderLeft {
+
+	box-sizing: border-box;
+}
+
+a, li a, ul li a, *:hover, a:hover {
+
+	text-decoration: none;
+	transition: all 0.5s;
+	-o-transition: 		all 0.5s;
+	-ms-transition: 	all 0.5s;
+	-moz-transition: 	all 0.5s;
+	-webkit-transition: all 0.5s;
+
+}
+
+
+body {
+
+		font-family: Gnuolane;
+		font-size: .8em;
+}
+
+
+h1 {
+
+	font-size: 1.8em;
+	font-weight: normal;
+
+	}
+
+h2 {
+
+	font-weight: 1.2em;
+	font-weight: normal;
+}		
+
+.container {
+
+	width: 960px;
+	margin: 0 auto;
+
+}
+
+header {
+
+	width: 100%;
+	height: 216px;
+	background: #c50101 url('assets/img/header/bckg.png') center -40px no-repeat;
+
+}
+
+	.header {
+
+		height: 137px;
+		position: relative;
+	}
+	
+
+		.logo {
+
+			margin-top: 42px;
+			flat: left;
+		}
+
+		.tel {
+
+			float: right;
+			margin-top: 61px;
+		}
+
+		.menu {
+
+			background: url('assets/img/header/shadowTop.png') no-repeat center bottom;
+		}
+
+
+		.menu ul {
+
+			display: table;
+			list-style-type: none;
+			padding: 0;
+			margin: 0  auto;
+			height: 79px;
+
+		}
+
+			.menu ul li {
+
+				float: left;
+			}
+
+				.menu ul li a {
+
+					color: white;
+					display: block;
+					font-size: 1.6em;
+					letter-spacing: 0.08em;
+					text-decoration: none;
+					padding: 26px 15px;
+					text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+
+				}
+				
+				.menu ul li a:hover {
+
+					color: black;
+					text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+				}
+
+main {
+
+	background: url('assets/img/header/backMain.png') repeat-x;
+}
+
+	.main {
+	
+			border-radius: 15px 15px 15px 15px ;
+	   -moz-border-radius: 15px 15px 15px 15px ;
+	-webkit-border-radius: 15px 15px 15px 15px ;
+	background: white;
+
+	}
+
+	.slider {
+
+	height: 300px;
+	z-index: 9000;
+	background: white;
+
+	}
+
+
+.wrapper {
+
+	padding: 0 20px;
+	display: flex;
+	display: -ms-flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -o-flex;
+}
+
+.siderLeft {
+
+	background: rgba(255,0,0,0.95);
+	padding: 15px 40px;
+	height: 300px;
+	-webkit-flex: 1;
+	-moz-flex: 1;
+	-ms-flex: 1;
+	-o-flex: 1;
+			border-radius: 0 0 15px 15px ;
+	   -moz-border-radius: 0 0 15px 15px ;
+	-webkit-border-radius: 0 0 15px 15px ;
+	color: white;
+	max-width: 260px;
+	float: left;
+}
+
+	.siderLeft h2 {
+
+		padding-top: 15px;
+		letter-spacing: .04em;
+		color: black;
+		text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.8);
+	}
+
+	.siderLeft ul {
+
+		display: block;
+		padding: 20px 0;
+		margin-left: 10px
+	}
+
+	.siderLeft ul li {
+
+		padding: 10px 0;
+		letter-spacing: 0.12em;
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+
+	}
+
+		.siderLeft ul li:first-child {
+
+			padding-top: 0px;
+		}
+
+			.siderLeft ul li .atendimento {
+
+				background: url('assets/img/icons/atendimento.png'); no-repeat center center;
+			}
+
+.siderRight {
+
+	flex: 3;
+	-o-flex: 3;
+	-ms-flex: 3;
+	-moz-flex: 3;
+	-webkit-flex: 3;
+	padding: 30px 40px;
+	min-height: 500px;
+	max-width: 660px;
+	float: right;
+
+}
+
+	.siderRight p {
+
+		padding: 10px 0;
+		font-size: 1.3em;
+		text-align: justify;
+		text-indent: 15px;
+	}
+
+	.siderRight p:first-child {
+
+
+	}
+
+	.siderRight ul{
+
+		margin-left: 50px;
+		font-size: 1.2em;
+	}
+
+#accordion, #contato, #localiza, #janco, #orcamentos, #voce, #empresa {
+
+
+	padding-top: 20px;
+}
+
+	#contato input, #contato textarea {
+
+		padding: 10px;
+		margin: 5px;
+	}
+
+	input, textarea
+
+	{
+		padding: 10px;
+		margin: 5px;
+
+	}
+
+
+#localiza iframe {
+
+	-webkit-box-shadow: 	8px 8px 8px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    	8px 8px 8px 0px rgba(50, 50, 50, 0.25);
+		box-shadow:         8px 8px 8px 0px rgba(50, 50, 50, 0.25);
+}
+
+	
+	#localiza p {
+
+		font-size: 1.2em;
+	}
+
+.produtos {
+
+	display: flex;
+	height: 367px;
+	background: url('assets/img/header/shadowBottom.png') no-repeat center top;
+}
+
+	.produtos h1 {
+
+		border-bottom: 1px solid #b3b3b3;
+	}
+
+	.flex-1 {
+
+		flex: 1;
+		-o-flex: 1;
+		-ms-flex: 1;
+		-moz-flex: 1;
+		-webkit-flex: 1;
+		margin-top: 57px;
+		padding-right: 38px;
+		max-width: 291px;
+		float: left;
+	}
+
+		.voce {
+
+			position: relative;
+			background: url('assets/img/voce.png') no-repeat center bottom;
+			width: 252px;
+			height: 261px;
+		}
+
+		.empresa {
+
+			position: relative;
+			background: url('assets/img/empresa.png') no-repeat;
+			width: 252px;
+			height: 261px;
+		}
+
+		.label {
+
+			position: absolute;
+			bottom: 0px;
+			height: 60px;
+			width: 252px;
+			background: rgba(0,0,0,0.65);
+			line-height: 60px;
+			text-align: center;
+			color: white;
+			font-family: Arial;
+			font-weight: bold;
+			font-size: 0.88em;
+		}
+
+	.flex-2 {
+
+		flex: 1.5;
+		-o-flex: 1.5;
+		-ms-flex: 1.5;
+		-moz-flex: 1.5;
+		-webkit-flex: 1.5;
+		margin-top: 57px;
+		max-width: 379px;
+		float: left;
+	}
+
+	.box {
+
+		height: 145px;
+		flex: 1;
+		-o-flex: 1;
+		-ms-flex: 1;
+		-moz-flex: 1;
+		-webkit-flex: 1;
+	}
+
+	.box h1 {
+
+		color: #b3b3b3;
+	}
+
+		.facebook, .sinistros {
+
+			color: #7d7d7d;
+			width: 100%;
+			height: 90px;
+			margin-top: 10px;
+			padding: 15px 28px;
+			font-size: 1.05em;
+			font-family: Arial;
+			text-align: justify;
+			text-indent: 20px;
+			-webkit-box-shadow: 8px 8px 8px 0px rgba(50, 50, 50, 0.25);
+			-moz-box-shadow:    8px 8px 8px 0px rgba(50, 50, 50, 0.25);
+			box-shadow:         8px 8px 8px 0px rgba(50, 50, 50, 0.25);
+		}
+
+			.facebook a, .sinistros a {
+
+				color: #dd0000;
+
+			}
+
+			.facebook a:hover, .sinistros a:hover {
+
+				color: black;
+
+			}
+
+.seguradoras {
+
+	height: 200px;
+	clear: both;
+
+}
+
+	.seguradoras h1 {
+
+		color: #dd0000;
+		border-bottom: 1px solid;
+	}
+
+	.firstRow {
+		
+		position: relative;
+		top: 15px;
+		left: 54px;
+	}
+
+	.firstRow ul {
+
+		left: 50%;
+		margin-left: 460px;
+	}
+
+	.firstRow li {
+
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+		top: 0;
+
+	}
+
+	.firstRow li, .firstRow li a {
+
+		height: 61px;
+		display: block;
+
+	}
+
+	.transition {
+
+		transition: background .5s linear;
+		-moz-transition: background .5s linear;
+		-webkit-transition: background .5s linear;
+		-ms-transition: background .5s linear;
+	}
+
+		#itau {
+
+			left: 0;
+			width: 61px;
+			background: url('assets/img/seguradoras/firstRow.png') 0 0 no-repeat;
+			transition:		 all 0.5s;
+		  	-moz-transition: all 0.5s;	
+
+		}
+
+			#itau:hover {
+
+				left: 0;
+				width: 61px;
+				background: url('assets/img/seguradoras/firstRow_hover.png') 0 0 no-repeat;
+				transition: all 0.5s;
+			}
+
+		#por {
+
+			left: 70px;
+			width: 55px;
+			background: url('assets/img/seguradoras/firstRow.png') -62px 0 no-repeat;
+		}
+
+			#por:hover {
+
+				left: 70px;
+				width: 55px;
+				background: url('assets/img/seguradoras/firstRow_hover.png') -62px 0 no-repeat;
+			}
+
+		#hdi {
+
+			left: 130px;
+			width: 116px;
+			background: url('assets/img/seguradoras/firstRow.png') -118px 0 no-repeat;
+			
+		}
+
+			#hdi:hover {
+
+				left: 130px;
+				width: 116px;
+				background: url('assets/img/seguradoras/firstRow_hover.png') -118px 0 no-repeat;
+			
+			}
+
+		#mapfre {
+
+			left: 250px;
+			width: 132px;
+			background: url('assets/img/seguradoras/firstRow.png') -234px 0 no-repeat;
+			
+		}
+
+			#mapfre:hover {
+
+				left: 250px;
+				width: 132px;
+				background: url('assets/img/seguradoras/firstRow_hover.png') -234px 0 no-repeat;
+			
+			}
+
+		#bra {
+
+			left: 390px;
+			width: 62px;
+			background: url('assets/img/seguradoras/firstRow.png') -367px 0 no-repeat;
+			
+		}
+			
+			#bra:hover {
+
+				left: 390px;
+				width: 62px;
+				background: url('assets/img/seguradoras/firstRow_hover.png') -367px 0 no-repeat;
+				
+			}
+
+
+		#msig {
+
+			left: 460px;
+			width: 132px;
+			background: url('assets/img/seguradoras/firstRow.png') -429px 0 no-repeat;
+			
+		}
+
+			#msig:hover {
+
+				left: 460px;
+				width: 132px;
+				background: url('assets/img/seguradoras/firstRow_hover.png') -429px 0 no-repeat;
+				
+			}
+
+		#maritima {
+
+			left: 600px;
+			width: 167px;
+			background: url('assets/img/seguradoras/firstRow.png') -561px 0 no-repeat;
+			
+		}
+
+			#maritima:hover {
+
+			left: 600px;
+			width: 167px;
+			background: url('assets/img/seguradoras/firstRow_hover.png') -561px 0 no-repeat;
+			
+			}
+
+
+		#azul {
+
+			left: 775px;
+			width: 59px;
+			background: url('assets/img/seguradoras/firstRow.png') -728px 0 no-repeat;
+			
+		}
+
+			#azul:hover {
+
+			left: 775px;
+			width: 59px;
+			background: url('assets/img/seguradoras/firstRow_hover.png') -728px 0 no-repeat;
+			
+			}
+
+	.secondRow {
+		
+		position: relative;
+		left: 115px;
+		top: 90px;
+	}
+
+	.secondRow ul {
+
+		left: 50%;
+		margin-left: 460px;
+	}
+
+	.secondRow li {
+
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		position: absolute;
+		top: 0;
+
+	}
+
+	.secondRow li, .secondRow li a {
+
+		height: 63px;
+		display: block;
+
+	}
+
+		#zurich {
+
+			left: 0;
+			width: 99px;
+			background: url('assets/img/seguradoras/secRow.png') 0 0 no-repeat;
+
+		}
+
+			#zurich:hover {
+
+				left: 0;
+				width: 99px;
+				background: url('assets/img/seguradoras/secRow_hover.png') 0 0 no-repeat;
+
+			}
+
+		#chubb {
+
+			left: 113px;
+			width: 52px;
+			background: url('assets/img/seguradoras/secRow.png') -102px 0 no-repeat;
+
+		}
+
+			#chubb:hover {
+
+				left: 113px;
+				width: 52px;
+				background: url('assets/img/seguradoras/secRow_hover.png') -102px 0 no-repeat;
+
+			}
+
+		#allianz {
+
+			left: 177px;
+			width: 62px;
+			background: url('assets/img/seguradoras/secRow.png') -154px 0 no-repeat;
+
+		}
+
+			#allianz:hover {
+
+				left: 177px;
+				width: 62px;
+				background: url('assets/img/seguradoras/secRow_hover.png') -154px 0 no-repeat;
+
+			}
+
+		#ace {
+
+			left: 250px;
+			width: 67px;
+			background: url('assets/img/seguradoras/secRow.png') -215px 0 no-repeat;
+
+		}
+
+			#ace:hover {
+
+				left: 250px;
+				width: 67px;
+				background: url('assets/img/seguradoras/secRow_hover.png') -215px 0 no-repeat;
+
+			}
+
+		#tokio {
+
+			left: 325px;
+			width: 73px;
+			background: url('assets/img/seguradoras/secRow.png') -282px 0 no-repeat;
+
+		}
+
+			#tokio:hover {
+
+				left: 325px;
+				width: 73px;
+				background: url('assets/img/seguradoras/secRow_hover.png') -282px 0 no-repeat;
+
+			}
+
+		#sula {
+
+			left: 405px;
+			width: 158px;
+			background: url('assets/img/seguradoras/secRow.png') -355px 0 no-repeat;
+
+		}
+
+			#sula:hover {
+
+				left: 405px;
+				width: 158px;
+				background: url('assets/img/seguradoras/secRow_hover.png') -355px 0 no-repeat;
+
+			}
+
+		#liberty {
+
+			left: 565px;
+			width: 125px;
+			background: url('assets/img/seguradoras/secRow.png') -500px 0 no-repeat;
+
+		}
+
+			#liberty:hover {
+
+				left: 565px;
+				width: 125px;
+				background: url('assets/img/seguradoras/secRow_hover.png') -500px 0 no-repeat;
+
+			}
+
+footer {
+
+	width: 100%;
+	height: 155px;
+	background: black; 
+	padding-top: 50px;
+	clear: both;
+}
+
+	footer h1 {
+
+		color: white;
+		font-size: 2.5em;
+		text-align: center;
+		font-family: Arial, Verdana, Tahoma, sans-serif;
+
+	}
+
+	footer h2 {
+
+		color: gray;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1.02em; font-weight: bold;
+		font-family: Arial, Verdana, Tahoma, sans-serif;
+
+	}
+
+.signature {
+
+	background: url('assets/img/footerSign.png') repeat-x center top;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.23);
+	width: 100%;
+	font-family: Arial;
+	font-size: 1em;
+	height: 45px;
+	line-height: 45px;
+	clear: both;
+}
+
+	.signature iframe {
+
+		float: right;
+		padding: 0;
+		margin-top: -33px;
+		margin-right: 15%;
+
+	}
+
